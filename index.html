@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Portal operativo de MV SEG para asesores: solicitudes de cotización y gestión documentada de siniestros.">
+<title>MV SEG | Portal de asesores · Cotizaciones y siniestros</title>
+<style>
+:root{--navy:#0b2039;--navy2:#163854;--gold:#cba85e;--ink:#172d43;--muted:#5c7084;--bg:#f1f4f8;--line:#dbe3ec;--ivory:#fbf8f1;--mint:#0a7b5e;--red:#ae3044}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg)}header{background:linear-gradient(122deg,#09182e 12%,#17466b 94%);color:white;border-bottom:4px solid var(--gold)}.top{max-width:1800px;margin:auto;padding:31px clamp(16px,3vw,48px) 35px}.brand{font-size:12px;font-weight:800;letter-spacing:.16em;color:#e7c782}.hero{font-size:clamp(27px,4.5vw,40px);letter-spacing:-.035em;line-height:1.16;margin:10px 0}.subtitle{max-width:820px;color:#dfebf4;margin:0;font-size:14px}main{max-width:1800px;margin:auto;padding:22px clamp(10px,3vw,48px) 42px}.layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(340px,.9fr);align-items:start;gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:17px;box-shadow:0 8px 26px rgba(22,45,70,.07);min-width:0;padding:23px}.kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:#8f7438}h2{font-size:21px;line-height:1.25;margin:6px 0 12px}h3{color:var(--navy);font-size:16px;margin:20px 0 9px}p{margin:8px 0 12px}.muted,.hint{color:var(--muted);font-size:12px;line-height:1.55}.note{padding:13px 14px;background:var(--ivory);border-left:3px solid var(--gold);border-radius:8px;font-size:13px;line-height:1.55;margin:15px 0}.note b{color:var(--navy)}.tabs{display:flex;flex-wrap:wrap;gap:8px;padding:6px 0 10px;margin-bottom:12px}.tab{white-space:nowrap;cursor:pointer;background:#f1f5f8;color:var(--navy);border:1px solid #dce4ed;padding:10px 12px;border-radius:10px;font-weight:750;min-height:43px;flex:1 1 auto;text-align:center}.tab[aria-selected=true]{background:var(--navy);color:white;border-color:var(--navy)}.tab:focus-visible,.btn:focus-visible{outline:3px solid #b7a06a;outline-offset:2px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 12px}.field{min-width:0;margin-bottom:11px}.field label{display:block;font-size:12px;font-weight:750;margin-bottom:5px;color:#30465d}.required:after{content:' *';color:#b13a4b}.field input,.field select,.field textarea{width:100%;min-width:0;border:1px solid #cbd6e0;border-radius:9px;font:inherit;color:var(--ink);background:white;padding:10px 11px;min-height:43px;outline:0}.field input:focus,.field textarea:focus,.field select:focus{border-color:#5285b0;box-shadow:0 0 0 3px #bed8ec77}.field textarea{resize:vertical;min-height:78px}.sectiontitle{display:flex;align-items:center;gap:10px;color:var(--navy);font-size:15px;font-weight:800;margin:20px 0 12px}.sectiontitle:after{content:'';flex:1;height:1px;background:var(--line)}.checkrow{display:flex;align-items:flex-start;gap:9px;border:1px solid #dfe5eb;background:#f8fafc;border-radius:10px;padding:11px 12px;margin:12px 0;font-size:13px;cursor:pointer}.checkrow input{flex-shrink:0;width:18px;height:18px;accent-color:var(--navy);margin:1px 0 0}.checkrow span{flex:1}.inset{padding:13px;border-radius:12px;background:#f8fafc;border:1px solid var(--line);margin:10px 0}.item{padding:13px;border-radius:12px;border:1px solid #dbe4ec;background:#fafbfc;margin-bottom:10px}.item-head{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;font-weight:800;color:var(--navy);margin-bottom:6px}.btn{border:0;border-radius:10px;cursor:pointer;font:inherit;font-weight:800;min-height:44px;padding:11px 16px;background:var(--navy);color:white}.btn:hover{filter:brightness(1.1)}.btn.soft{background:#eaf0f6;color:var(--navy)}.btn.green{background:var(--mint)}.btn.gold{background:#ece2c9;color:#594219}.btn.tiny{font-size:12px;min-height:35px;padding:7px 11px}.btn.link{border:1px dashed #a8b6c8;background:#f7f9fb;color:var(--navy);width:100%}.btn.danger{color:#ae3542;background:#faedf0}.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.actions .btn{flex:1;min-width:145px}.preview{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--ivory);border:1px solid #e6d9bb;border-radius:12px;padding:15px;min-height:200px;font-size:13px;line-height:1.55;color:#253b50}.status{font-size:12px;min-height:22px;color:var(--mint);margin:7px 0}.error{font-size:13px;color:var(--red);margin:8px 0}.chip{display:inline-block;margin:3px 4px 3px 0;font-size:12px;border-radius:16px;background:#f7f1e5;color:#735d30;border:1px solid #eadfc9;padding:4px 9px}.rule{border:0;height:1px;background:var(--line);margin:22px 0}.priceRow{display:flex;align-items:center;justify-content:space-between;gap:5px;font-size:12px;border-bottom:1px solid #e9e1ce;padding:6px 1px}.priceRow strong{font-size:13px}.tablewrap{border:1px solid #eae0cd;background:#fffdfa;border-radius:10px;padding:11px;margin:10px 0}.hintblock{padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#f8fafb;font-size:12px}.inactive{display:none!important}footer{max-width:1800px;margin:auto;padding:10px clamp(16px,3vw,48px) 26px;font-size:12px;color:#67798c}.serial{color:#9a7d43;font-weight:700;font-size:11px}.banner{border:1px solid #d4e7de;background:#f3faf7;padding:12px 14px;border-radius:10px;font-size:13px;margin-bottom:13px}.wrap{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.linecheck{display:flex;align-items:center;gap:8px;font-size:12px;margin:7px 0}.linecheck input{accent-color:var(--navy)}.footnote{font-size:11px;color:#61798c;margin-top:7px}
+@media(max-width:920px){.layout{grid-template-columns:1fr}.card{padding:19px}}@media(max-width:560px){.tabs{display:grid;grid-template-columns:1fr 1fr}.tab{white-space:normal;text-align:left}main{padding:13px 10px 30px}.card{padding:15px}.grid2,.grid3{grid-template-columns:1fr}.top{padding:24px 16px 27px}.actions .btn{min-width:calc(50% - 6px)}.tab{padding:9px 10px}.hero{font-size:29px}}
+@media print{header,aside,.actions,.tabs,.btn,footer{display:none!important}main{width:100%;padding:0}.layout{display:block}.card{box-shadow:none;border:0}}
+
+/* Portal operativo V4 */
+[hidden]{display:none!important}
+.workspace-nav{display:flex;gap:10px;margin-bottom:17px;flex-wrap:wrap}
+.workspace-nav button{min-height:49px;border-radius:12px;border:1px solid #d3deea;padding:10px 19px;font:inherit;font-weight:800;background:#fff;color:var(--navy);cursor:pointer;box-shadow:0 3px 12px #1a35570c}
+.workspace-nav button[aria-selected="true"]{background:var(--navy);color:white;border-color:var(--navy)}
+.workspace-nav button:focus-visible,.doc-status:focus-visible{outline:3px solid #cba85e;outline-offset:2px}
+.claim-split{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+.claim-doc{display:grid;grid-template-columns:minmax(0,1fr) minmax(145px,185px);gap:12px;align-items:center;padding:10px 11px;border:1px solid #e0e7ee;border-radius:10px;background:#f9fafc;margin-bottom:8px}
+.claim-doc .doc-name{font-size:13px;font-weight:650;color:#243d54;line-height:1.35}
+.claim-doc select{width:100%;border:1px solid #cdd9e5;background:#fff;border-radius:9px;padding:8px;font-size:12px;color:#24405a}
+.claim-doc .doc-name small{display:block;font-size:11px;color:#6c7f91;margin-top:3px;font-weight:400}
+.claim-status{background:#fbf8f1;padding:12px 13px;border-left:3px solid var(--gold);font-size:12px;color:#596f7e;border-radius:7px;margin:9px 0 14px}
+.claim-alert{border:1px solid #f0d9cc;background:#fff9f4;border-radius:12px;padding:14px;margin:12px 0;font-size:12px;color:#7e473a}
+.claim-alert strong{color:#7b3525}
+.claim-checklist-caption{font-size:12px;color:var(--muted)}
+.claim-preview{min-height:200px}
+.panel-pill{display:inline-flex;background:#e9f3f2;color:#126458;border-radius:20px;font-size:11px;font-weight:750;padding:5px 9px}
+.claim-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;margin:13px 0 20px}
+.claim-steps div{border-radius:10px;border:1px solid #dae4eb;padding:9px 7px;text-align:center;font-size:11px;font-weight:700;color:#2b465f;background:#f5f8fb}
+@media(max-width:660px){.claim-split{grid-template-columns:1fr}.claim-doc{grid-template-columns:1fr}.claim-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.workspace-nav button{flex:1}}
+@media print{.workspace-nav{display:none}}
+
+/* V4.1 · Validación visible */
+.err-summary{position:sticky;top:8px;z-index:30;border:1px solid #e3a7b0;border-left:6px solid var(--red);background:#fff5f6;border-radius:12px;padding:12px 14px;margin:0 0 16px;box-shadow:0 8px 22px rgba(120,30,45,.16);max-height:38vh;overflow:auto;font-size:13px}
+.err-summary.ok{border-color:#9bd0be;border-left-color:var(--mint);background:#f1faf6;box-shadow:0 6px 18px rgba(10,123,94,.12);color:#0b4f3d}
+.err-summary.warn{border-color:#e6d09a;border-left-color:#b8892b;background:#fff9ea;color:#6a4a10}
+.err-head{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.err-head strong{color:#8d1f31;font-size:14px}
+.err-summary.ok .err-head strong,.err-summary.ok strong{color:#0b6a50}
+.err-help{margin:6px 0 4px;font-size:12px;color:#6b4a52}
+.err-group{margin-top:8px}.err-group b{color:var(--navy);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.err-group ul{margin:3px 0 0;padding-left:18px}.err-group li{margin:2px 0;line-height:1.4}
+.err-group a{color:#8d1f31;font-weight:750;text-decoration:underline}
+.err-summary .btn{min-height:32px}
+.field-error{display:block;color:#a82a3b;font-size:12px;font-weight:700;line-height:1.35;margin-top:5px}
+.field-error:before{content:'⚠ ';}
+.field.has-error input,.field.has-error select,.field.has-error textarea{border-color:#c4364b;background:#fff8f9;box-shadow:0 0 0 2px #f4c3ca88}
+.checkrow.has-error{border-color:#c4364b;background:#fff8f9}
+.inset .field-error,.item .field-error{margin-bottom:2px}
+.field input,.field select,.field textarea{scroll-margin-top:90px}
+.preview{scroll-margin-top:12px}
+.preview.stale{opacity:.75;border-style:dashed}
+@media(max-width:560px){.err-summary{max-height:30vh;padding:10px 11px;top:4px}}
+</style>
+</head>
+<body>
+<header><div class="top"><div class="brand">MV SEG · SEGUROS E INVERSIONES</div><h1 class="hero">Cotizaciones claras, desde el primer dato.</h1><p class="subtitle">Herramienta opcional de derivación comercial. Completá el formulario y enviá la solicitud a Matías por email o WhatsApp. Si preferís, también podés derivarle directamente el contacto.</p></div></header>
+<main>
+<nav class="workspace-nav" aria-label="Secciones del portal">
+<button type="button" id="workspaceCot" aria-selected="true">📋 Solicitudes de cotización</button>
+<button type="button" id="workspaceSin" aria-selected="false">🛡️ Gestión de siniestros</button>
+</nav>
+<div class="layout" id="quoteWorkspace"><section class="card" aria-label="Formulario de cotización"><div class="kicker">01 · Solicitud de seguro</div><h2>¿Qué querés cotizar?</h2><nav class="tabs" role="tablist" aria-label="Tipos de riesgo" id="tabs"></nav><form id="quoteForm" autocomplete="on" novalidate>
+<div class="err-summary" id="quoteSummary" hidden aria-live="polite"></div>
+<div class="sectiontitle">👤 Datos del posible asegurado</div>
+<div class="grid2"><div class="field"><label class="required" for="nombre">Nombre completo / razón social</label><input id="nombre" name="nombre" required placeholder="Según DNI o CUIT"></div><div class="field"><label class="required" for="tipoDoc">Tipo de documento</label><select id="tipoDoc" required><option value="">Seleccionar</option><option>DNI</option><option>CUIT</option><option>CUIL</option></select></div></div>
+<div class="grid2"><div class="field"><label class="required" for="nroDoc">Número de documento</label><input id="nroDoc" required inputmode="numeric" data-kind="doc" placeholder="Solo números, sin puntos ni guiones"></div><div class="field"><label class="required" for="fiscal">Condición fiscal para cotización / facturación</label><select id="fiscal" required><option value="">Seleccionar</option><option>Consumidor final</option><option>Monotributista</option><option>Responsable inscripto</option><option>Exento</option><option>No responsable</option><option>No categorizado</option><option>Otro / verificar</option></select></div></div>
+<div class="grid2"><div class="field"><label for="nacimiento">Fecha de nacimiento (si es persona humana)</label><input id="nacimiento" type="date"></div><div class="field"><label class="required" for="contacto">Teléfono de contacto</label><input id="contacto" type="tel" required data-kind="tel" placeholder="Ej.: 11 1234-5678"></div></div>
+<div class="grid2"><div class="field"><label for="mail">Email (si lo tiene)</label><input id="mail" type="email" placeholder="correo@ejemplo.com"></div><div class="field"><label class="required" for="asesor">Asesor / productor que deriva</label><input id="asesor" placeholder="Nombre del asesor responsable" required autocomplete="name"></div></div>
+<div class="grid2"><div class="field"><label class="required" for="domicilio">Dirección completa del asegurado</label><input id="domicilio" required placeholder="Calle, número, localidad y provincia"></div><div class="field"><label class="required" for="cpDomicilio">Código postal del domicilio</label><input id="cpDomicilio" required data-kind="cp" placeholder="Ej.: 1824"></div></div>
+<div class="note"><b>Condición fiscal:</b> sirve para cotizar y gestionar la emisión con los datos correctos, incluida la facturación correspondiente. Debe coincidir con la situación fiscal real del cliente. No se solicitan números de tarjeta ni datos bancarios para cotizar.</div>
+<div id="riskFields" aria-live="polite"></div>
+<div class="sectiontitle">📝 Cierre del pedido</div>
+<div class="field"><label for="actual">Compañía actual y póliza (si tiene)</label><input id="actual" placeholder="Compañía, póliza y vencimiento, si se conocen"></div>
+<div class="field"><label for="observaciones">Observaciones adicionales</label><textarea id="observaciones" placeholder="Datos particulares del riesgo, comparativas solicitadas o documentación disponible"></textarea></div>
+<div id="formError" class="error" role="alert"></div><div class="actions"><button type="submit" class="btn">Generar solicitud →</button><button type="reset" class="btn soft">Limpiar formulario</button></div>
+</form></section>
+<aside class="card" aria-label="Compartir solicitudes de cotización"><div class="kicker">02 · Compartir solicitud</div><h2>Pedido listo para compartir</h2><p class="muted">Generá la solicitud con los datos escritos, y elegí cómo enviarla a MV SEG: por email o por WhatsApp. También podés copiar los requisitos para pedírselos al cliente por escrito.</p><div id="preview" class="preview" aria-live="polite">Elegí un ramo y completá los campos. Acá aparecerán los datos para compartir por email o WhatsApp.</div><div class="actions"><button id="openMail" class="btn" type="button" disabled>✉️ Preparar email a MV SEG</button><button id="openWa" class="btn green" type="button" disabled>💬 WhatsApp a Matías</button><button id="copy" class="btn soft" type="button" disabled>📋 Copiar pedido</button></div><p class="hint">El botón de email abre la aplicación de correo configurada en el dispositivo con destinatario y solicitud preparados. <b>No envía nada automáticamente:</b> hay que revisar y presionar Enviar. Para solicitudes extensas, como flotas, el texto se copia para pegarlo y evitar que un programa de correo lo recorte.</p><div class="actions"><button id="requirements" class="btn gold" type="button">📝 Copiar requisitos del ramo</button></div><div class="status" role="status" id="status"></div>
+<hr class="rule"><h3>📌 Qué podés gestionar</h3><div id="chips"><span class="chip">Auto</span><span class="chip">Moto</span><span class="chip">Flota comercial</span><span class="chip">Celular</span><span class="chip">Accidentes personales</span><span class="chip">RC profesional / mala praxis</span><span class="chip">Hogar</span><span class="chip">Comercio</span><span class="chip">Otros riesgos</span></div><div class="banner">✅ Si no sabés qué datos pedir para otro tipo de seguro, <b>consultá igualmente</b>. Se evalúa el riesgo, la compañía y los requisitos aplicables antes de prometer aceptación o cobertura.</div>
+<h3>🏢 Compañías que podemos consultar para autos</h3><p><span class="chip">Zurich</span><span class="chip">Mapfre</span><span class="chip">San Cristóbal</span><span class="chip">Sancor</span><span class="chip">Allianz</span><span class="chip">Federación Patronal</span><span class="chip">Mercantil Andina</span><span class="chip">Galicia</span><span class="chip">Rivadavia</span><span class="chip">ATM</span><span class="chip">Experta</span><span class="chip">Digna</span><span class="chip">Otras</span></p><p class="muted">Se evalúa cada riesgo y uso real; también trabajamos vehículos para aplicaciones, si la compañía lo acepta.</p><h3>🏍️ Motos</h3><p class="muted">Principalmente ATM; según modelo y uso se pueden consultar otras compañías. Algunas motos, como determinadas 110 cc y modelos tipo enduro, pueden tener restricciones por siniestralidad.</p>
+<h3>📱 Celulares · Life Seguros</h3><p class="muted">Robo y/o hurto y servicio de asistencia por rotura de pantalla según condiciones del plan.</p><div class="tablewrap"><div class="serial">COTIZACIONES DE REFERENCIA · 04/11/2026</div><div class="priceRow"><span>SA $ 600.000,00</span><strong>$ 7.887,14 / mes</strong></div><div class="priceRow"><span>SA $ 900.000,00</span><strong>$ 11.830,71 / mes</strong></div><div class="priceRow"><span>SA $ 1.200.000,00</span><strong>$ 15.774,28 / mes</strong></div><div class="priceRow"><span>SA $ 1.800.000,00</span><strong>$ 23.661,42 / mes</strong></div><div class="priceRow"><span>SA $ 2.400.000,00</span><strong>$ 31.548,56 / mes</strong></div><div class="footnote"><b>Valores mensuales de referencia cotizados al 04/11/2026.</b> Pueden cambiar de un mes al otro, incluso al momento de emitir. Las coberturas, límites, exclusiones y el precio final se deben reconfirmar con Life Seguros antes de contratar.</div></div>
+<div class="note">🔒 La herramienta funciona en tu navegador: no almacena formularios en un servidor propio. Al tocar WhatsApp, el texto se comparte a través de ese servicio; al preparar email, se entrega a la aplicación de correo del dispositivo. <b>El envío no es automático.</b> Revisá destinatario, datos y adjuntos antes de enviar. Evitá usar dispositivos compartidos para información personal.</div></aside></div>
+<section class="layout" id="claimWorkspace" hidden aria-label="Solicitud de gestión de siniestros">
+<section class="card">
+<div class="kicker">01 · Ingreso y seguimiento</div>
+<h2>🛡️ Gestión de siniestros</h2>
+<p class="muted">Un solo formulario para enviar el aviso, solicitar documentación y dejar por escrito los pendientes. No reemplaza la denuncia formal ante la aseguradora.</p>
+<div class="claim-steps" aria-label="Etapas operativas">
+<div>1. Aviso</div><div>2. Identificar riesgo</div><div>3. Documentos</div><div>4. Reclamo</div><div>5. Seguimiento</div>
+</div>
+<div class="claim-alert"><strong>🚨 Atención:</strong> ante personas lesionadas o peligro, priorizá servicios de emergencia y asistencia inmediata. Notificá el hecho a la aseguradora cuanto antes, según póliza y canal correspondiente; no esperes a reunir todos los documentos para comunicar un siniestro urgente.</div>
+<form id="claimForm" autocomplete="off" novalidate>
+<div class="err-summary" id="sinSummary" hidden aria-live="polite"></div>
+<div class="grid2">
+<div class="field"><label class="required" for="sinTipo">Tipo de siniestro</label><select id="sinTipo" required><option value="">Seleccionar tipo</option><option value="choque">Choque / accidente de tránsito</option><option value="roboAuto">Robo / hurto de vehículo</option><option value="granizo">Granizo / daño de vehículo</option><option value="inmueble">Hogar / comercio</option><option value="apSiniestro">Accidentes personales</option><option value="praxisSiniestro">RC profesional / mala praxis</option><option value="celSiniestro">Celular / equipo electrónico</option><option value="otro">Otro siniestro</option></select></div>
+<div class="field"><label class="required" for="sinEtapa">Tipo de gestión</label><select id="sinEtapa" required><option>Aviso inicial</option><option>Envío de documentación</option><option>Seguimiento de expediente</option><option>Pedido de aclaración / reclamo</option></select></div>
+</div>
+<div class="sectiontitle">👤 Asegurado y gestión</div>
+<div class="grid2"><div class="field"><label class="required" for="sinAsegurado">Nombre / razón social</label><input id="sinAsegurado" placeholder="Según documento o póliza" required></div><div class="field"><label for="sinDocumento">DNI / CUIT (si se conoce)</label><input id="sinDocumento" inputmode="numeric" data-kind="doc" placeholder="Sin puntos ni guiones"></div></div>
+<div class="grid2"><div class="field"><label class="required" for="sinTelefono">Teléfono de contacto</label><input id="sinTelefono" type="tel" required data-kind="tel" placeholder="11 ..."></div><div class="field"><label class="required" for="sinAsesor">Asesor que informa / gestiona</label><input id="sinAsesor" required placeholder="Nombre del asesor"></div></div>
+<div class="grid2"><div class="field"><label for="sinCompania">Compañía aseguradora</label><input id="sinCompania" placeholder="Si no se conoce, dejar pendiente"></div><div class="field"><label for="sinPoliza">Número de póliza o referencia</label><input id="sinPoliza" placeholder="Si no se conoce, dejar pendiente"></div></div>
+<div class="grid2"><div class="field"><label for="sinExpediente">N.º de siniestro / expediente existente</label><input id="sinExpediente" placeholder="Solo si ya fue asignado"></div><div class="field"><label for="sinMail">Email de contacto</label><input id="sinMail" type="email" placeholder="Opcional"></div></div>
+<div class="sectiontitle">📅 Hecho denunciado</div>
+<div class="grid2"><div class="field"><label class="required" for="sinFecha">Fecha del hecho</label><input id="sinFecha" type="date" required></div><div class="field"><label for="sinHora">Hora (si se conoce)</label><input id="sinHora" type="time"></div></div>
+<div class="field"><label class="required" for="sinLugar">Lugar del hecho</label><input id="sinLugar" required placeholder="Calle, altura, localidad, provincia"></div>
+<div class="field"><label class="required" for="sinRelato">Relato objetivo de lo ocurrido</label><textarea id="sinRelato" required placeholder="Qué pasó, cómo, cuándo y dónde. Evitá atribuir responsabilidades o especular."></textarea></div>
+<div id="sinEspecial" aria-live="polite"></div>
+<div class="sectiontitle">📎 Documentación y comprobantes</div>
+<p class="claim-checklist-caption">Marcá cada elemento como <b>disponible para adjuntar</b>, <b>pendiente</b> o <b>no aplica</b>. Este formulario no adjunta archivos por sí mismo. Adjuntalos manualmente al email o WhatsApp.</p>
+<div id="sinDocs"></div>
+<div class="sectiontitle">📌 Próximo paso</div>
+<div class="grid2"><div class="field"><label class="required" for="sinAccion">Qué necesitás gestionar</label><select id="sinAccion" required><option value="">Seleccionar</option><option>Registrar aviso del siniestro</option><option>Solicitar documentación faltante</option><option>Enviar comprobantes / ampliación</option><option>Consultar estado del expediente</option><option>Reclamar respuesta de la compañía</option><option>Otra gestión (detallar)</option></select></div><div class="field"><label for="sinUrgencia">Prioridad informada</label><select id="sinUrgencia"><option>Normal</option><option>Urgente (explicar motivo)</option></select></div></div>
+<div class="field"><label for="sinObservaciones">Observaciones, documentación adicional o pendiente concreto</label><textarea id="sinObservaciones" placeholder="Qué se hizo hasta ahora y qué respuesta se espera"></textarea></div>
+<label class="checkrow"><input id="sinAutorizacion" type="checkbox" required data-label="Autorización del interesado" data-msg="Tenés que confirmar que contás con la autorización del interesado para continuar."><span><b>Confirmo que tengo autorización del interesado</b> para compartir estos datos con MV SEG y gestionar el siniestro. *</span></label>
+<div class="error" id="sinError" role="alert"></div>
+<div class="actions"><button class="btn" type="submit">Generar gestión →</button><button class="btn soft" type="reset">Limpiar formulario</button></div>
+</form>
+</section>
+<aside class="card" aria-label="Enviar gestión de siniestros">
+<div class="kicker">02 · Compartir la gestión</div><h2>Mensaje listo para enviar</h2>
+<p class="muted">La solicitud identifica al asegurado, el hecho, los documentos disponibles y los pendientes por resolver, para reducir intercambios innecesarios.</p>
+<div class="preview claim-preview" id="sinPreview" aria-live="polite">Elegí el tipo de siniestro, cargá el aviso y generá la gestión. Acá aparecerá el texto escrito.</div>
+<div class="actions"><button id="sinMailBtn" class="btn" type="button" disabled>✉️ Preparar email</button><button id="sinWaBtn" class="btn" type="button" disabled>💬 WhatsApp</button><button id="sinCopyBtn" class="btn soft" type="button" disabled>📋 Copiar</button></div>
+<div class="actions"><button id="sinReqBtn" class="btn soft" type="button">📝 Copiar requisitos del siniestro</button></div>
+<div id="sinStatus" class="status" role="status"></div>
+<hr class="rule"><h3>💡 Regla operativa</h3>
+<div class="claim-status"><b>El aviso inicial no debe frenarse por documentación pendiente.</b> Dejá identificado qué falta, quién lo debe aportar y cuál es el próximo paso. Cada compañía puede exigir documentación adicional según la póliza y el tipo de siniestro.</div>
+<h3>🔒 Privacidad de la documentación</h3>
+<p class="muted">No se guardan archivos ni datos en este sitio estático. El envío se hace desde tu WhatsApp o aplicación de correo. No subas DNI, pólizas, historias clínicas ni fotografías privadas al repositorio público. En casos de salud o praxis, utilizá canales autorizados y compartí únicamente lo necesario.</p>
+<h3>⚠️ Recordatorio</h3><p class="muted">Esta solicitud sirve para <b>organizar la gestión</b>. No prueba que la aseguradora recibió o aceptó la denuncia, ni confirma cobertura o pago. Conservá siempre la constancia de recepción de la compañía.</p>
+</aside></section>
+</main>
+<footer>MV SEG · Seguros e Inversiones · Canal comercial de derivación · Los premios, sumas aseguradas, límites y condiciones se confirman en cotización y póliza vigentes. Herramienta autónoma sin almacenamiento propio; el envío depende de WhatsApp o del cliente de correo del usuario.</footer>
+<script>
+/* MV SEG V4.1 · Validación centralizada (compartida por Cotizaciones y Siniestros) */
+window.MVV=(()=>{'use strict';
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const clean=s=>String(s||'').replace(/\p{Extended_Pictographic}|️|‍/gu,'').replace(/\s+/g,' ').replace(/\s*\*$/,'').trim();
+const val=el=>!el?'':el.type==='checkbox'?(el.checked?'1':''):String(el.value==null?'':el.value).trim();
+const visible=el=>!!el&&!el.disabled&&!el.closest('.inactive,[hidden]')&&el.getClientRects().length>0;
+const KINDS={
+ doc:(v,form)=>{const t=form.querySelector('#tipoDoc'),tp=t?t.value:'';if(!/^\d+$/.test(v))return 'Ingresá solo números, sin puntos, guiones ni espacios.';if(tp==='DNI'&&!/^\d{7,8}$/.test(v))return 'El DNI tiene 7 u 8 dígitos.';if((tp==='CUIT'||tp==='CUIL')&&v.length!==11)return 'El '+tp+' tiene 11 dígitos.';if(v.length<7||v.length>11)return 'Debe tener entre 7 y 11 dígitos.'},
+ cp:v=>/^(\d{4}|[A-Za-z]\d{4}[A-Za-z]{3})$/.test(v)?'':'Ingresá un código postal de 4 dígitos (ej.: 1824) o formato CPA (ej.: B1824ABC).',
+ year:v=>{const y=new Date().getFullYear();return /^\d{4}$/.test(v)&&+v>=1900&&+v<=y+1?'':'Ingresá un año de 4 dígitos entre 1900 y '+(y+1)+'.'},
+ tel:v=>{const d=v.replace(/\D/g,'');return /^[\d\s()+\-.]+$/.test(v)&&d.length>=8&&d.length<=15?'':'Ingresá un teléfono válido con característica (8 a 15 dígitos).'},
+ imei:v=>/^\d{15}$/.test(v)?'':'El IMEI tiene 15 dígitos, sin espacios ni guiones.'
+};
+function labelOf(el){
+ if(el.dataset.label)return el.dataset.label;
+ const l=el.id?document.querySelector('label[for="'+(window.CSS&&CSS.escape?CSS.escape(el.id):el.id)+'"]'):null;
+ return clean((l&&l.textContent)||el.getAttribute('aria-label')||el.placeholder||el.id||'Campo');
+}
+function sectionOf(form,el){
+ const parts=[],unit=el.closest('[data-vehicle]'),sec=el.closest('[data-sec]'),add=el.closest('.addon');
+ if(unit){const n=unit.querySelector('.unitNo');parts.push('Unidad '+(n?n.textContent:'?'))}
+ if(sec)parts.push(sec.dataset.sec);
+ if(add){const n=add.querySelector('.addNo');parts.push('Accesorio '+(n?n.textContent:''))}
+ if(parts.length)return parts.join(' · ').trim();
+ let node=el;
+ while(node&&node!==form){let s=node.previousElementSibling;while(s){if(s.classList&&s.classList.contains('sectiontitle'))return clean(s.textContent);s=s.previousElementSibling}node=node.parentElement}
+ return 'Datos iniciales';
+}
+function generic(form,push){
+ form.querySelectorAll('input,select,textarea').forEach(el=>{
+  if(['hidden','button','submit','reset'].includes(el.type)||el.classList.contains('doc-status')||!visible(el))return;
+  if(el.type==='checkbox'){if(el.required&&!el.checked)push(el,el.dataset.msg||'Tenés que confirmarlo para continuar.');return}
+  if(el.type==='number'&&el.validity&&el.validity.badInput){push(el,'Ingresá un número válido (solo dígitos).');return}
+  const v=val(el);
+  if(!v){if(el.required)push(el,el.tagName==='SELECT'?'Seleccioná una opción.':'Este dato es obligatorio.');return}
+  if(el.type==='number'){const n=Number(v);if(!isFinite(n)||n<0){push(el,'Ingresá un número válido, mayor o igual a cero.');return}if(el.required&&n===0&&!el.hasAttribute('data-zero-ok'))push(el,'Ingresá un valor mayor que cero.');return}
+  if(el.type==='email'&&!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){push(el,'Ingresá un email válido, por ejemplo nombre@dominio.com.');return}
+  const k=el.dataset.kind;if(k&&KINDS[k]){const m=KINDS[k](v,form);if(m)push(el,m)}
+ });
+}
+function goTo(el){
+ if(!el)return;
+ try{el.scrollIntoView({block:'center',behavior:'instant'})}catch(_){el.scrollIntoView()}
+ try{el.focus({preventScroll:true})}catch(_){}
+}
+function attach(o){
+ const form=o.form,box=o.summary;let attempted=false,flagged=new Set(),collapsed=false,current=[];
+ function collect(){
+  const list=[],seen=new Set();
+  const push=(el,message,over)=>{if(!el||seen.has(el))return;seen.add(el);list.push({el,message,label:(over&&over.label)||labelOf(el),section:(over&&over.section)||sectionOf(form,el)})};
+  if(o.rules)o.rules(push,{visible,val});
+  generic(form,push);
+  list.sort((a,b)=>(a.el.compareDocumentPosition(b.el)&Node.DOCUMENT_POSITION_FOLLOWING)?-1:1);
+  return list;
+ }
+ function clearMarks(){
+  form.querySelectorAll('.field-error').forEach(n=>n.remove());
+  form.querySelectorAll('.has-error').forEach(n=>n.classList.remove('has-error'));
+  form.querySelectorAll('[aria-invalid]').forEach(n=>{n.removeAttribute('aria-invalid');const d=n.getAttribute('data-desc0');if(d!==null){if(d)n.setAttribute('aria-describedby',d);else n.removeAttribute('aria-describedby');n.removeAttribute('data-desc0')}});
+ }
+ function mark(list){
+  list.forEach(e=>{
+   const el=e.el;if(!el.id)el.id='mvv-'+Math.random().toString(36).slice(2,8);
+   const eid=el.id+'-err',d=document.createElement('div');d.className='field-error';d.id=eid;d.textContent=e.message;
+   const holder=el.closest('.field')||el.closest('.checkrow')||el.parentElement;
+   if(el.tagName==='BUTTON')el.insertAdjacentElement('afterend',d);
+   else if(holder.classList.contains('checkrow'))holder.insertAdjacentElement('afterend',d);
+   else holder.appendChild(d);
+   holder.classList.add('has-error');
+   el.setAttribute('aria-invalid','true');
+   if(!el.hasAttribute('data-desc0'))el.setAttribute('data-desc0',el.getAttribute('aria-describedby')||'');
+   el.setAttribute('aria-describedby',(el.getAttribute('data-desc0')+' '+eid).trim());
+   e.id=el.id;
+  });
+ }
+ function renderSummary(list){
+  box.dataset.kind='';
+  if(!list.length){box.hidden=true;box.innerHTML='';box.className='err-summary';return}
+  const groups=[];list.forEach(e=>{let g=groups.find(x=>x.s===e.section);if(!g){g={s:e.section,items:[]};groups.push(g)}g.items.push(e)});
+  const n=list.length;box.className='err-summary';box.dataset.kind='errors';
+  box.innerHTML='<div class="err-head"><strong>'+(n===1?'Falta completar o corregir 1 dato':'Faltan o hay que corregir '+n+' datos')+' para '+esc(o.noun)+'</strong><button type="button" class="btn tiny soft err-toggle" aria-expanded="'+(!collapsed)+'">'+(collapsed?'Ver lista':'Ocultar lista')+'</button></div><div class="err-body"'+(collapsed?' hidden':'')+'><p class="err-help">Tocá un dato para ir directo al campo. Cada campo marcado en rojo explica abajo qué falta.</p>'+groups.map(g=>'<div class="err-group"><b>'+esc(g.s)+'</b><ul>'+g.items.map(e=>'<li><a href="#'+esc(e.id)+'" data-for="'+esc(e.id)+'">'+esc(e.label)+'</a> — '+esc(e.message)+'</li>').join('')+'</ul></div>').join('')+'</div>';
+  box.hidden=false;
+ }
+ function draw(list){current=list;clearMarks();mark(list);renderSummary(list)}
+ function validate(){attempted=true;const list=collect();flagged=new Set(list.map(e=>e.el));draw(list);if(list.length)goTo(list[0].el);return list}
+ function refresh(target){
+  if(!attempted)return;
+  const had=current.length;
+  const list=collect().filter(e=>flagged.has(e.el)||e.el===target);
+  if(!list.length&&box.dataset.kind==='fixed')return;
+  flagged=new Set(list.map(e=>e.el));draw(list);
+  if(!list.length&&had){box.className='err-summary ok';box.dataset.kind='fixed';box.innerHTML='<strong>✓ Ya está todo completo.</strong> Presioná «'+esc(o.cta||'Generar')+'» para preparar el texto.';box.hidden=false}
+ }
+ function clear(){attempted=false;flagged=new Set();draw([]);box.dataset.kind=''}
+ function success(msg,opt){
+  attempted=false;flagged=new Set();current=[];clearMarks();
+  box.className='err-summary ok';box.dataset.kind='success';
+  box.innerHTML='<div class="err-head"><strong>'+esc(msg)+'</strong>'+(opt&&opt.target?'<button type="button" class="btn tiny green err-go">'+esc(opt.label||'Ver resultado')+'</button>':'')+'</div>';
+  box.hidden=false;box._target=opt&&opt.target;
+ }
+ function notice(msg){box.className='err-summary warn';box.dataset.kind='notice';box.innerHTML='<strong>'+esc(msg)+'</strong>';box.hidden=false}
+ box.addEventListener('click',e=>{
+  const a=e.target.closest('a[data-for]');
+  if(a){e.preventDefault();goTo(document.getElementById(a.dataset.for));return}
+  if(e.target.closest('.err-toggle')){collapsed=!collapsed;renderSummary(current);return}
+  if(e.target.closest('.err-go')&&box._target){box._target.scrollIntoView({block:'start',behavior:'instant'})}
+ });
+ function onEdit(e){
+  if(box.dataset.kind==='success'||box.dataset.kind==='notice'){box.hidden=true;box.dataset.kind=''}
+  if(o.onEdit)o.onEdit(e);
+  refresh(e.target);
+ }
+ form.addEventListener('input',onEdit);form.addEventListener('change',onEdit);
+ return {validate,refresh,clear,success,notice,collect};
+}
+return {attach,goTo,KINDS};
+})();
+</script>
+<script>
+(()=>{'use strict';
+const DESTINO='541123878384';
+const EMAIL='mvseguroseinversiones@gmail.com';
+const CEL_PRECIOS={
+ '$ 600.000':7887.14,
+ '$ 900.000':11830.71,
+ '$ 1.200.000':15774.28,
+ '$ 1.800.000':23661.42,
+ '$ 2.400.000':31548.56
+};
+const CEL_FECHA='04/11/2026';
+const TYPES=[['auto','🚗 Auto'],['moto','🏍️ Moto'],['flota','🚚 Flota comercial'],['celular','📱 Celular'],['ap','🛡️ Accidentes personales'],['praxis','⚕️ Mala praxis / RC prof.'],['hogar','🏡 Hogar'],['comercio','🏪 Comercio']];
+const $=id=>document.getElementById(id);let tipo='auto',generated='';let accessoryIndex=0,vehicleIndex=0;
+const V=MVV.attach({form:$('quoteForm'),summary:$('quoteSummary'),noun:'preparar la solicitud',cta:'Generar solicitud',rules:(push,h)=>quoteRules(push,h),onEdit:()=>markStale()});
+const PREVIEW_IDLE='Elegí un ramo y completá los datos. El pedido escrito aparecerá acá.';
+const m=n=>new Intl.NumberFormat('es-AR',{style:'currency',currency:'ARS',minimumFractionDigits:2}).format(Number(n));
+const escaped=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const field=(id,label,ph='',extra='')=>`<div class="field"><label class="${extra.includes('required')?'required':''}" for="${id}">${label}</label><input id="${id}" ${extra} placeholder="${ph}"></div>`;
+const num=(id,label,ph='',req=false,zeroOk=false)=>`<div class="field"><label class="${req?'required':''}" for="${id}">${label}</label><input id="${id}" type="number" min="0" step="0.01" inputmode="decimal" ${req?'required':''} ${zeroOk?'data-zero-ok':''} placeholder="${ph}"></div>`;
+const select=(id,label,opts,req=false)=>`<div class="field"><label class="${req?'required':''}" for="${id}">${label}</label><select id="${id}" ${req?'required':''}><option value="">Seleccionar</option>${opts.map(o=>`<option>${escaped(o)}</option>`).join('')}</select></div>`;
+const useOpts=['Particular','Comercial / laboral','Aplicaciones (Uber, Cabify, DiDi, etc.)','Taxi / remis','Reparto / delivery','Alquiler / renting','Transporte de mercaderías','Otro uso (detallar)'];
+const payOpts=['Tarjeta de crédito','CBU / débito en cuenta','Efectivo / cupón','A definir'];
+function motor(){return select('motor','Motorización',['Nafta','Diésel / gasolero','Híbrido','Eléctrico','Otro'],true)}
+function gnc(prefix=''){return `<label class="checkrow"><input type="checkbox" class="gncCheck" data-gnc-target="${prefix}gncSection"><span><strong>¿Tiene equipo de GNC instalado?</strong> Marcá la casilla para indicar la suma a asegurar.</span></label><div id="${prefix}gncSection" class="inset inactive" data-sec="GNC">${num(prefix+'gncValor','Suma asegurada solicitada para el equipo de GNC ($)','Ej.: 2000000')}</div><p class="hint">La suma asegurada del GNC está sujeta al máximo aceptado por cada compañía. Declararlo no garantiza su cobertura.</p>`}
+function accessories(prefix=''){return `<div class="sectiontitle">🔧 Adicionales no originales de fábrica</div><p class="hint">Si querés asegurar llantas especiales, estéreo, equipamiento, accesorios u otros elementos agregados al vehículo, incorporalos uno por uno con su valor estimado. Cada compañía determina aceptación, topes y exclusiones.</p><div class="extras" id="${prefix}extras"></div><button type="button" class="btn link addExtra" data-target="${prefix}extras">＋ Agregar otro adicional</button>`}
+function vehicleFields(moto=false){return `<div class="sectiontitle">${moto?'🏍️':'🚗'} Datos del ${moto?'motovehículo':'automotor'}</div><div class="grid2">${field('marca','Marca','Ej.: Chevrolet','required')}${field('modelo','Modelo y versión','Ej.: Onix LT','required')}${field('anio','Año de fabricación','Ej.: 2020','required inputmode="numeric" data-kind="year"')}${field('patente','Dominio / patente','Ej.: AB123CD')}</div>${moto?`<div class="grid2">${num('cilindrada','Cilindrada (cc)','Ej.: 150',true)}${select('uso','Destino o uso de la moto',['Particular','Comercial / laboral','Reparto / delivery','Mensajería','Aplicaciones','Otro uso (detallar)'],true)}</div>`:`<div class="grid2">${motor()}${select('uso','Destino o uso real',useOpts,true)}</div>`}${field('usoDetalle','Si es comercial u otro, detallá exactamente la actividad','Ej.: reparto de productos, Uber, empresa de seguridad')}
+<div class="grid2">${field('guarda','Dirección de guarda habitual del vehículo','Si es igual al domicilio, escribir «Igual al domicilio»','required')}${field('cpGuarda','Código postal de guarda','Ej.: 1824','required data-kind="cp"')}</div>${moto?'':gnc()}${accessories()}<div class="sectiontitle">🛡️ Cobertura y pago</div><div class="grid2">${select('cobertura','Cobertura que quiere consultar',['No sabe / asesorar','Responsabilidad civil','Robo / hurto','Terceros completo','Todo riesgo','Otra'])}${select('medio','Medio de pago previsto',payOpts,true)}</div><div class="grid2">${field('costoActual','Valor de la póliza actual (si lo sabe)','Ej.: 100000')}${field('sumaDeseada','Suma asegurada buscada (si se conoce)','Ej.: 15000000')}</div><p class="hint">El medio de pago puede modificar el premio. Si el vehículo se usa para trabajo, aplicaciones o reparto, es obligatorio detallar el destino real.</p>`}
+function fleetItem(idx){return `<div class="item" data-vehicle="${idx}"><div class="item-head"><span>🚚 Unidad <span class="unitNo">${idx}</span></span><button type="button" class="btn tiny danger removeUnit">Eliminar</button></div><div class="grid2">${field('flPatente'+idx,'Dominio / patente','Si está patentado','')}${field('flMarca'+idx,'Marca','Ej.: Fiat','required')}${field('flModelo'+idx,'Modelo y versión','Ej.: Cronos Like','required')}${field('flAnio'+idx,'Año','Ej.: 2024','required inputmode="numeric" data-kind="year"')}</div><div class="grid2">${select('flMotor'+idx,'Motorización',['Nafta','Diésel / gasolero','Híbrido','Eléctrico','Otro'],true)}${select('flUso'+idx,'Uso comercial específico',['Aplicaciones / plataformas','Reparto / delivery','Logística / distribución','Alquiler / renting','Transporte de pasajeros','Transporte de mercaderías','Flota corporativa / visita a clientes','Otro uso comercial'],true)}</div>${field('flUsoDetalle'+idx,'Descripción concreta de la actividad comercial','Ej.: Uber, transporte de personal, reparto de alimentos','required')}${gnc('fl'+idx)}${accessories('fl'+idx)}</div>`}
+function fleet(){return `<div class="sectiontitle">🚚 Datos de la flota comercial</div><div class="banner"><b>Uso obligatorio:</b> especificá para qué se usa realmente cada unidad. “Comercial” por sí solo no alcanza para seleccionar el producto adecuado.</div><div class="grid2">${field('empresa','Empresa / operador de flota (si difiere del tomador)','Razón social')}${field('flGuarda','Dirección donde normalmente se guarda la flota','Si hay distintas bases, aclarar')}</div><div class="grid2">${field('flCP','CP de la base principal','Ej.: 1824','required data-kind="cp"')}${select('flMedio','Medio de pago previsto',payOpts,true)}</div><div class="field"><label for="flNotas">Observaciones operativas de la flota</label><textarea id="flNotas" placeholder="Cantidad prevista, conductores, viajes, aplicaciones utilizadas, distintas zonas de guarda, etc."></textarea></div><div class="sectiontitle">🚘 Unidades a cotizar</div><div id="unidades"></div><button type="button" class="btn link" id="addUnit">＋ Agregar unidad</button><p class="hint">Si son muchas unidades, se puede adjuntar una planilla o listado al enviar el pedido, detallando las características y el uso de cada una.</p>`}
+function celular(){return `<div class="sectiontitle">📱 Datos del equipo</div><div class="grid2">${field('celMarca','Marca','Ej.: Samsung','required')}${field('celModelo','Modelo exacto','Ej.: Galaxy A17 5G','required')}${num('celValor','Valor actual del aparato ($)','Ej.: 600000',true)}${select('celEstado','Estado del equipo',['Nuevo, en caja','En uso','Usado / reacondicionado'],true)}</div><div class="grid2">${field('celIMEI','IMEI (si se conoce)','15 dígitos','inputmode="numeric" data-kind="imei"')}${select('celSA','Suma asegurada de referencia',['$ 600.000','$ 900.000','$ 1.200.000','$ 1.800.000','$ 2.400.000','Otra / consultar'])}</div><div id="celPriceInfo" class="hintblock" role="status" aria-live="polite">Elegí una suma asegurada para ver el precio mensual de referencia.</div><p class="hint">Cobertura de referencia: robo y/o hurto + servicio de asistencia por rotura de pantalla, sujetos a aceptación, límites y condiciones. Los valores de Life Seguros fueron cotizados al 04/11/2026 y <b>pueden variar mes a mes</b>; no son precios garantizados.</p>`}
+function ap(){return `<div class="sectiontitle">🛡️ Accidentes personales</div><div class="grid2">${field('apActividad','Actividad a realizar','Ej.: mantenimiento industrial, construcción','required')}${num('apCantidad','Cantidad de personas a asegurar','Ej.: 2',true)}</div><div class="field"><label class="required" for="apTareas">Descripción de tareas concretas y riesgos asociados</label><textarea id="apTareas" required placeholder="Qué hacen, dónde, si hay trabajo en altura, maquinaria o traslados"></textarea></div><label class="checkrow"><input id="apMoto" type="checkbox"><span>🏍️ ¿Se trasladan en moto hacia el trabajo o durante la actividad laboral?</span></label><div class="grid2">${num('apSA','Suma asegurada por muerte accidental, por persona ($)','Referencia comercial: 45000000',true)}${num('apSAOtros','Otras sumas solicitadas (invalidez / gastos médicos, $)','Si aplica')}</div><div class="grid2">${select('apVigencia','Tipo de vigencia',['Anual','Por día(s) / período determinado'],true)}${field('apContrato','Requisito de cliente / contrato (si existe)','Ej.: mínimo contractual')}</div><div id="apFechas" class="inset inactive"><div class="grid2">${field('apDesde','Inicio de cobertura','','type="date"')}${field('apHasta','Fin de cobertura','','type="date"')}</div></div><p class="hint">Como referencia comercial se puede consultar desde $ 45.000.000,00 por muerte accidental, pero no es un mínimo legal universal. La suma final depende de la actividad, contrato y aceptación de la compañía. Para varios asegurados puede hacer falta una nómina.</p>`}
+function praxis(){return `<div class="sectiontitle">⚕️ Praxis médica / RC profesional</div><div class="grid2">${field('prProfesion','Profesión o actividad','Ej.: médica pediatra, kinesiólogo','required')}${field('prAntiguedad','Antigüedad en la actividad','Ej.: 8 años','required')}${field('prDireccion','Dirección profesional / zona de trabajo','Ej.: Avellaneda y CABA','required')}${select('prMedico','¿Es profesional médico?',['Sí','No'],true)}</div><div id="prMedicoFields" class="inset inactive"><div class="grid2">${field('prEspecialidad','Especialidad médica','Ej.: pediatría')}${select('prJefe','¿Es jefe/a de equipo?',['Sí','No'])}${select('prCirugias','¿Realiza cirugías o prácticas invasivas?',['Sí','No','A veces / detallar'])}${field('prPracticas','Prácticas realizadas / descripción','Si corresponde')}</div></div><div class="grid2">${select('prModalidad','Modalidad de trabajo',['Independiente','En institución','Ambas'],true)}${select('prEmpleados','¿Tiene empleados o colaboradores?',['No','Sí (detallar cantidad)'],true)}</div><div class="grid2">${select('prReclamos','¿Tuvo reclamos o siniestros previos?',['No','Sí (detallar)','No sabe / consultar'],true)}${field('prCapital','Suma asegurada deseada / exigida','Si se conoce')}</div><div class="grid2">${field('prPoliza','Compañía y cobertura vigente (si tiene)','Opcional')}${field('prRetro','Fecha de retroactividad (si aplica)','DD/MM/AAAA')}</div><p class="hint">Para propuestas Claims Made, revisar retroactividad, condiciones de declaración de reclamos, extensión de denuncias, defensa jurídica y exclusiones. No se da por confirmada ninguna extensión sin la cotización y sus cláusulas.</p>`}
+function hogar(){return `<div class="sectiontitle">🏡 Hogar</div><div class="grid2">${field('hoDireccion','Dirección del inmueble a cubrir','Calle, altura, localidad y provincia','required')}${field('hoCP','CP de la propiedad','Ej.: 1852','required data-kind="cp"')}${num('hoM2','Metros cuadrados cubiertos','Ej.: 90',true)}${select('hoTenencia','Tenencia',['Propietario','Inquilino','Otro'])}</div><div class="grid2">${select('hoPileta','¿Tiene pileta?',['Sí','No'],true)}${select('hoArboles','¿Hay árboles dentro o cerca del terreno?',['Sí','No','No sabe'],true)}${select('hoPerro','¿Tiene perro en la vivienda?',['Sí','No'],true)}${field('hoSeguridad','Medidas de seguridad','Ej.: rejas, alarma, monitoreo')}</div><div class="grid2">${num('hoBlanca','Valor estimado de línea blanca ($)','Heladera, lavarropas, cocina, AA',true)}${num('hoMarron','Valor estimado de línea marrón ($)','TV, notebook, audio, PC, etc.',true)}</div><div class="grid2">${num('hoEdificio','Suma para incendio de edificio ($)','Si se conoce')}${num('hoContenido','Suma para incendio de contenido ($)','Si se conoce')}</div><p class="hint">La compañía puede pedir datos adicionales sobre construcción, ocupación, cerramientos y siniestralidad.</p>`}
+function comercio(){return `<div class="sectiontitle">🏪 Comercio / PyME</div><div class="grid2">${field('coDireccion','Dirección completa del comercio','Calle, número, localidad y provincia','required')}${field('coCP','Código postal del comercio','Ej.: 1824','required data-kind="cp"')}${field('coActividad','Actividad exacta del local','Ej.: almacén, gimnasio, taller','required')}${num('coM2','Metros cuadrados aproximados','Ej.: 300',true)}</div><div class="grid2">${select('coLocal','¿Local propio o alquilado?',['Propio','Alquilado','Otro'],true)}${field('coHorario','Horario de atención','Ej.: 9 a 18 h','required')}${num('coEmpleados','Cantidad de empleados (0 si atiende solo/a)','Ej.: 4',true,true)}${field('coHabilitacion','Información particular de la actividad','Ej.: cocina, depósito, maquinaria')}</div><h3>🔒 Medidas de seguridad</h3><div class="grid2" id="coSeguridad">${['Alarma','Cámaras','Rejas / persianas','Monitoreo','Matafuegos'].map(o=>`<label class="linecheck"><input class="coCheck" type="checkbox" value="${o}">${o}</label>`).join('')}</div><div class="sectiontitle">💰 Valores estimados del riesgo</div><div class="grid2">${num('coStock','Mercadería / stock ($)','Ej.: 10000000',true)}${num('coMuebles','Mobiliario ($)','Ej.: 4000000',true)}${num('coElectronica','Equipamiento electrónico ($)','Computadoras, POS, impresoras, TV, etc.',true)}${num('coOtros','Herramientas u otros bienes ($)','Si corresponde')}</div><p class="hint">Declarar valores estimados permite iniciar una cotización, pero las sumas y la aceptación se ajustan a condiciones y relevamiento de cada aseguradora.</p>`}
+const renderers={auto:()=>vehicleFields(false),moto:()=>vehicleFields(true),flota:fleet,celular,ap,praxis,hogar,comercio};
+function setTipo(t){tipo=t;document.querySelectorAll('.tab').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.type===t)));$('riskFields').innerHTML=renderers[t]();if(t==='flota')addUnit();attachDynamic();resetOutput();$('formError').textContent='';V.refresh()}
+function resetOutput(){generated='';$('preview').classList.remove('stale');$('preview').textContent=PREVIEW_IDLE;$('copy').disabled=true;$('openWa').disabled=true;$('openMail').disabled=true;$('status').textContent=''}
+function markStale(){if(!generated)return;generated='';$('preview').classList.add('stale');$('preview').textContent='⚠️ Cambiaste datos del formulario después de generar la solicitud, así que el texto anterior quedó desactualizado y se desactivaron los botones de envío. Volvé a presionar «Generar solicitud» para actualizarlo.';$('copy').disabled=true;$('openWa').disabled=true;$('openMail').disabled=true;$('status').textContent=''}
+function renumberAcc(){document.querySelectorAll('#quoteForm .extras').forEach(box=>box.querySelectorAll('.addon .addNo').forEach((el,i)=>el.textContent=String(i+1)))}
+function addExtra(target){const parent=$(target);if(!parent)return;const i=++accessoryIndex;const box=document.createElement('div');box.className='item addon';box.dataset.idx=String(i);box.innerHTML=`<div class="item-head"><span>Accesorio / adicional <span class="addNo"></span></span><button type="button" class="btn tiny danger removeExtra">Eliminar</button></div><div class="grid2">${field('accDesc'+i,'Descripción','Ej.: llantas especiales','required')}${num('accValor'+i,'Suma asegurada solicitada ($)','Ej.: 500000',true)}</div>`;parent.appendChild(box);renumberAcc();box.querySelector('.removeExtra').onclick=()=>{box.remove();renumberAcc();V.refresh()}}
+function addUnit(){const box=$('unidades');if(!box)return;const i=++vehicleIndex;const wrap=document.createElement('div');wrap.innerHTML=fleetItem(i);const item=wrap.firstElementChild;box.appendChild(item);item.querySelector('.removeUnit').onclick=()=>{if(box.children.length<=1){V.notice('La flota debe tener al menos una unidad: no se puede eliminar la única que queda.');return}item.remove();renumberUnits();V.refresh()};attachDynamic(item);renumberUnits()}
+function renumberUnits(){$('unidades')?.querySelectorAll('.unitNo').forEach((el,i)=>el.textContent=String(i+1))}
+function setReq(el,on){if(!el)return;el.required=!!on;el.closest('.field')?.querySelector('label')?.classList.toggle('required',!!on)}
+function quoteRules(push,h){
+ const val=h.val;
+ document.querySelectorAll('#quoteForm .gncCheck').forEach(c=>{if(!h.visible(c)||!c.checked)return;const input=$(c.dataset.gncTarget)?.querySelector('input');if(input&&!(Number(input.value)>0))push(input,'Indicá la suma asegurada del equipo de GNC (mayor que cero) o desmarcá la casilla de GNC.')});
+ if(tipo==='auto'||tipo==='moto'){const u=$('uso');if(u&&val(u)&&val(u)!=='Particular'&&!val($('usoDetalle')))push($('usoDetalle'),'Detallá para qué se usa exactamente el vehículo (uso laboral, aplicaciones, reparto, etc.): «'+val(u)+'» solo no alcanza.')}
+ if(tipo==='ap'&&val($('apVigencia'))==='Por día(s) / período determinado'){const d=val($('apDesde')),f=val($('apHasta'));if(!d)push($('apDesde'),'Indicá la fecha de inicio de la cobertura.');if(!f)push($('apHasta'),'Indicá la fecha de fin de la cobertura.');else if(d&&f<d)push($('apHasta'),'La fecha de fin no puede ser anterior a la de inicio.')}
+ if(tipo==='praxis'&&val($('prMedico'))==='Sí'){[['prEspecialidad','Indicá la especialidad médica.'],['prJefe','Indicá si es jefe/a de equipo.'],['prCirugias','Indicá si realiza cirugías o prácticas invasivas.']].forEach(([id,msg])=>{if(!val($(id)))push($(id),msg)})}
+ if(tipo==='flota'&&!$('unidades').children.length)push($('addUnit'),'Agregá al menos una unidad a la flota.');
+}
+function attachDynamic(root=$('riskFields')){
+ root.querySelectorAll('.gncCheck').forEach(c=>{const target=$(c.dataset.gncTarget);const input=target?.querySelector('input');c.onchange=()=>{target.classList.toggle('inactive',!c.checked);if(input){setReq(input,c.checked);if(!c.checked)input.value=''}}});
+ const usoSel=root.querySelector('#uso');if(usoSel)usoSel.addEventListener('change',()=>setReq($('usoDetalle'),!!usoSel.value&&usoSel.value!=='Particular'));
+ root.querySelectorAll('.addExtra').forEach(b=>b.onclick=()=>addExtra(b.dataset.target));
+ const cel=$('celSA');if(cel){cel.onchange=showCelPrice;showCelPrice()}
+ const ap=$('apVigencia');if(ap)ap.onchange=()=>{const on=ap.value==='Por día(s) / período determinado';$('apFechas').classList.toggle('inactive',!on);['apDesde','apHasta'].forEach(x=>setReq($(x),on))};
+ const med=$('prMedico');if(med)med.onchange=()=>{const on=med.value==='Sí';$('prMedicoFields').classList.toggle('inactive',!on);['prEspecialidad','prJefe','prCirugias'].forEach(x=>setReq($(x),on))};
+ const add=$('addUnit');if(add)add.onclick=()=>addUnit();
+}
+function v(id){return $(id)?.value?.trim()||''}
+function money(id){const value=v(id);return value ? m(value):''}
+const put=(xs,k,value)=>{if(value)xs.push(`*${k}:* ${value}`)};
+const yn=id=>$(id)?.checked?'Sí':'No';
+function getAddons(box){return Array.from(box?.querySelectorAll('.addon')||[]).map(e=>{const a=e.querySelector('input[id^="accDesc"]'),b=e.querySelector('input[id^="accValor"]');return `${a?.value?.trim()||'Sin descripción'} — ${b?.value?m(b.value):'Sin valor'}`})}
+function fillVehicle(xs, prefix='', root=$('riskFields')){const get=(s)=>v(prefix+s);put(xs,'Marca',get('Marca')||v('marca'));put(xs,'Modelo y versión',get('Modelo')||v('modelo'));put(xs,'Año',get('Anio')||v('anio'));put(xs,'Patente',get('Patente')||v('patente'));put(xs,'Motor',get('Motor')||v('motor'));put(xs,'Uso',get('Uso')||v('uso'));put(xs,'Detalle de uso',get('UsoDetalle')||v('usoDetalle'));const g=prefix?$(prefix+'gncSection'):$('gncSection');const ch=g?.previousElementSibling?.querySelector('input[type=checkbox]');if(!prefix){put(xs,'Guarda',v('guarda'));put(xs,'CP guarda',v('cpGuarda'))}if(ch?.checked){put(xs,'GNC instalado','Sí');put(xs,'Suma solicitada para GNC',m(g.querySelector('input').value))}else if(tipo!=='moto')put(xs,'GNC instalado','No');const a=getAddons(root.querySelector('.extras'));if(a.length)xs.push('*Accesorios adicionales:*\n'+a.map((s,i)=>`  ${i+1}. ${s}`).join('\n'))}
+function addRiskLines(xs){switch(tipo){
+case 'auto':case 'moto':fillVehicle(xs);if(tipo==='moto')put(xs,'Cilindrada',v('cilindrada')+' cc');put(xs,'Cobertura buscada',v('cobertura'));put(xs,'Medio de pago',v('medio'));put(xs,'Costo actual',v('costoActual'));put(xs,'Suma deseada',v('sumaDeseada'));break;
+case 'flota':put(xs,'Empresa / operador',v('empresa'));put(xs,'Guarda principal',v('flGuarda'));put(xs,'CP de la base',v('flCP'));put(xs,'Medio de pago',v('flMedio'));put(xs,'Notas de la flota',v('flNotas'));const units=Array.from($('unidades').children);put(xs,'Cantidad de unidades',String(units.length));units.forEach((unit,i)=>{const id=unit.dataset.vehicle;const p='fl'+id;const line=[`*UNIDAD ${i+1}*`];put(line,'Patente',v('flPatente'+id));put(line,'Marca',v('flMarca'+id));put(line,'Modelo',v('flModelo'+id));put(line,'Año',v('flAnio'+id));put(line,'Motor',v('flMotor'+id));put(line,'Uso comercial',v('flUso'+id));put(line,'Detalle exacto del uso',v('flUsoDetalle'+id));const box=$(p+'gncSection');const check=box?.previousElementSibling?.querySelector('input[type=checkbox]');put(line,'GNC instalado',check?.checked?'Sí':'No');if(check?.checked)put(line,'GNC suma solicitada',money(p+'gncValor'));const a=getAddons($(p+'extras'));if(a.length)line.push('*Otros accesorios:*\n'+a.map((s,j)=>`  ${j+1}. ${s}`).join('\n'));xs.push(line.join('\n'))});break;
+case 'celular':put(xs,'Compañía a consultar','Life Seguros');put(xs,'Marca',v('celMarca'));put(xs,'Modelo exacto',v('celModelo'));put(xs,'Valor declarado',money('celValor'));put(xs,'Estado',v('celEstado'));put(xs,'IMEI (si consta)',v('celIMEI'));put(xs,'Suma solicitada',v('celSA'));put(xs,'Cobertura solicitada','Robo y/o hurto + asistencia por rotura de pantalla (según condiciones)');if(Object.hasOwn(CEL_PRECIOS,v('celSA'))){put(xs,'Premio mensual orientativo al '+CEL_FECHA,m(CEL_PRECIOS[v('celSA')]));xs.push('_Referencia cotizada al 04/11/2026: el precio puede variar mes a mes y debe confirmarse antes de contratar._')}break;
+case 'ap':put(xs,'Actividad',v('apActividad'));put(xs,'Cantidad de personas',v('apCantidad'));put(xs,'Descripción de tareas',v('apTareas'));put(xs,'Traslados en moto',yn('apMoto'));put(xs,'SA por muerte accidental / persona',money('apSA'));put(xs,'Otras sumas solicitadas',money('apSAOtros'));put(xs,'Vigencia',v('apVigencia'));if(v('apVigencia')==='Por día(s) / período determinado'){put(xs,'Desde',v('apDesde'));put(xs,'Hasta',v('apHasta'))}put(xs,'Requisitos del contrato',v('apContrato'));break;
+case 'praxis':put(xs,'Profesión / actividad',v('prProfesion'));put(xs,'Antigüedad',v('prAntiguedad'));put(xs,'Dirección profesional',v('prDireccion'));put(xs,'Profesional médico',v('prMedico'));if(v('prMedico')==='Sí'){put(xs,'Especialidad',v('prEspecialidad'));put(xs,'Jefe de equipo',v('prJefe'));put(xs,'Cirugías / prácticas invasivas',v('prCirugias'));put(xs,'Prácticas realizadas',v('prPracticas'))}put(xs,'Modalidad de trabajo',v('prModalidad'));put(xs,'Empleados / colaboradores',v('prEmpleados'));put(xs,'Reclamos previos',v('prReclamos'));put(xs,'Suma buscada',v('prCapital'));put(xs,'Póliza actual',v('prPoliza'));put(xs,'Retroactividad',v('prRetro'));break;
+case 'hogar':put(xs,'Dirección del inmueble',v('hoDireccion'));put(xs,'CP',v('hoCP'));put(xs,'Metros cuadrados cubiertos',v('hoM2'));put(xs,'Tenencia',v('hoTenencia'));put(xs,'Pileta',v('hoPileta'));put(xs,'Árboles',v('hoArboles'));put(xs,'Perro',v('hoPerro'));put(xs,'Seguridad',v('hoSeguridad'));put(xs,'Valor línea blanca',money('hoBlanca'));put(xs,'Valor línea marrón',money('hoMarron'));put(xs,'Suma edificio',money('hoEdificio'));put(xs,'Suma contenido',money('hoContenido'));break;
+case 'comercio':put(xs,'Dirección del comercio',v('coDireccion'));put(xs,'CP',v('coCP'));put(xs,'Actividad',v('coActividad'));put(xs,'Metros cuadrados',v('coM2'));put(xs,'Propiedad del local',v('coLocal'));put(xs,'Horarios',v('coHorario'));put(xs,'Empleados',v('coEmpleados'));put(xs,'Particularidades',v('coHabilitacion'));const checks=Array.from(document.querySelectorAll('.coCheck:checked')).map(x=>x.value);put(xs,'Seguridad declarada',checks.length?checks.join(', '):'Ninguna indicada');put(xs,'Mercadería',money('coStock'));put(xs,'Mobiliario',money('coMuebles'));put(xs,'Equipamiento electrónico',money('coElectronica'));put(xs,'Otros',money('coOtros'));break;
+}}
+function buildMessage(){const label=TYPES.find(x=>x[0]===tipo)[1];const ls=[`📋 *SOLICITUD DE COTIZACIÓN · ${label.toUpperCase()}*`,`*Asegurado / razón social:* ${v('nombre')}`,`*Documento:* ${v('tipoDoc')} ${v('nroDoc')}`,`*Condición fiscal:* ${v('fiscal')}`];put(ls,'Fecha de nacimiento',v('nacimiento'));put(ls,'Teléfono',v('contacto'));put(ls,'Email',v('mail'));put(ls,'Origen',v('asesor'));put(ls,'Domicilio del asegurado',v('domicilio'));put(ls,'CP domicilio',v('cpDomicilio'));ls.push('');addRiskLines(ls);if(v('actual'))put(ls,'Póliza vigente',v('actual'));if(v('observaciones'))put(ls,'Observaciones',v('observaciones'));ls.push('','✅ *Autorización:* El interesado autorizó compartir los datos para esta gestión.','_Solicito cotización, aceptación y condiciones vigentes. '+(tipo==='moto'?'Los accesorios adicionales quedan sujetos':tipo==='auto'||tipo==='flota'?'La suma del GNC y los accesorios adicionales quedan sujetos':'Los datos declarados quedan sujetos')+' a límites, aceptación y documentación de la compañía._');return ls.join('\n')}
+function requirements(t){const h='¡Gracias por contactarte! 😊\nPara poder cotizar, te pido por favor que me envíes *los datos escritos*. Las fotos o documentos sirven para verificarlos.\n\n📄 Nombre completo / razón social y DNI o CUIT\n🧾 Condición fiscal (consumidor final, monotributista, responsable inscripto, etc.)\n📍 Domicilio completo, localidad y código postal\n📞 Teléfono de contacto\n';const ends='\n📑 Si tenés una póliza actual, podés enviarla para comparar alternativas.\n\n¡Con estos datos puedo comenzar a gestionar tu cotización! 🙌';const addon='\n🔧 Si tiene accesorios no originales de fábrica que quieran asegurarse (llantas especiales, equipamiento, etc.), indicá descripción y valor por separado. Su aceptación y límite dependen de cada compañía.';const texts={
+auto:'\n🚘 Patente, marca, modelo, versión y año\n⚙️ Motor: nafta, diésel/gasolero u otro\n🛣️ Uso real (particular, comercial, aplicaciones, reparto, etc.); si es comercial, detalle de la tarea\n📍 Dirección y CP de guarda habitual\n🔧 Si tiene GNC: indicá que sí y la suma asegurada pretendida (el máximo varía por compañía)'+addon+'\n💳 Medio de pago previsto (tarjeta de crédito, CBU o efectivo; sin números)',
+moto:'\n🏍️ Patente, marca, modelo, versión, cilindrada y año\n🛣️ Uso real (particular, reparto, mensajería, laboral u otro); si es comercial, describí actividad\n📍 Dirección y CP de guarda habitual'+addon+'\n💳 Medio de pago previsto (tarjeta de crédito, CBU o efectivo; sin números)',
+flota:'\n🚚 Empresa o tomador y lugar de guarda\n📋 Listado de unidades con patente, marca, modelo, año y motorización\n🛣️ *Uso comercial específico por vehículo* (Uber/Cabify, alquiler, reparto, logística, transporte, etc.). No alcanza con poner “comercial”.\n🔧 GNC de cada unidad, si corresponde, y suma solicitada\n🛞 Accesorios agregados y valor de cada uno\n💳 Medio de pago previsto; puede adjuntarse una planilla',
+celular:'\n📱 Marca y modelo exacto del equipo\n💰 Valor actual declarado y suma a cubrir\n📦 Estado (nuevo, usado, en caja)\n🔎 IMEI si se dispone\n🛡️ Cobertura a solicitar (robo / hurto, asistencia de pantalla, etc.)',
+ap:'\n👥 Cantidad de personas a asegurar (o nómina)\n🧾 Actividad que realizan, con descripción de las tareas y riesgos\n🏍️ Si se trasladan en moto al trabajo o durante la actividad\n💰 Suma asegurada por muerte accidental y otras coberturas exigidas\n📅 Vigencia: anual o por días (indicar fecha de inicio y fin)\n📋 Si hay contrato, informar requisitos de la empresa. Como referencia comercial podemos consultar desde $ 45.000.000,00 por muerte accidental, sujeto a evaluación; no es mínimo legal universal.',
+praxis:'\n⚕️ Profesión / actividad y antigüedad en la actividad\n📍 Dirección profesional o zona de trabajo\n👨‍⚕️ Si es médico: especialidad, si es jefe de equipo y si realiza cirugías o prácticas invasivas\n👥 Si trabaja independiente, en institución o ambos; si tiene empleados o colaboradores\n⚖️ Si tuvo reclamos o siniestros previos\n🛡️ Suma requerida y póliza actual, si la tiene (para revisar extensión de denuncias, retroactividad y defensas)',
+hogar:'\n🏡 Dirección de la vivienda y superficie cubierta en m²\n🏊 Si tiene pileta\n🌳 Si hay árboles dentro o cerca del terreno\n🐶 Si tiene perro\n⚪ Valor estimado línea blanca (heladera, lavarropas, cocina, AA)\n🟤 Valor estimado línea marrón (TV, notebook, audio, computadora)\n🏢 Si se conoce, valor del edificio y contenido',
+comercio:'\n🏪 Dirección del comercio, actividad y metros cuadrados\n🏢 Si el local es propio o alquilado\n🕒 Horarios de atención\n👥 Cantidad de empleados\n🔒 Seguridad: alarma, cámaras, rejas/persianas, monitoreo y matafuegos\n📦 Valor estimado de mercadería o stock\n🪑 Valor de mobiliario\n💻 Valor de electrónica (computadoras, POS, impresoras, TV, herramientas, etc.)'};return h+texts[t]+ends}
+async function copy(t){try{await navigator.clipboard.writeText(t);return true}catch(e){const ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.left='-9999px';document.body.appendChild(ta);ta.focus();ta.select();const ok=document.execCommand('copy');ta.remove();return ok}}
+function status(s){$('status').textContent=s}
+function showCelPrice(){
+ const out=$('celPriceInfo');if(!out)return;
+ const sa=v('celSA');
+ if(Object.hasOwn(CEL_PRECIOS,sa)){
+  out.textContent=`💰 Premio mensual de referencia: ${m(CEL_PRECIOS[sa])} · cotizado al ${CEL_FECHA}. Puede variar mes a mes. Confirmar al contratar.`;
+ }else if(sa==='Otra / consultar'){
+  out.textContent='Para otra suma asegurada, consultar cotización con Life Seguros. No hay precio confirmado.';
+ }else{out.textContent='Elegí una suma asegurada para ver su premio mensual orientativo.'}
+}
+function emailSubject(){
+ const label=TYPES.find(x=>x[0]===tipo)?.[1]||tipo;
+ return `Solicitud de cotización · ${label} · ${v('nombre')}`;
+}
+function emailBody(){return `Hola, equipo de MV SEG:
+
+Les comparto la siguiente solicitud de cotización para gestionar y confirmar condiciones:
+
+${generated}
+
+Gracias.`}
+
+const tabs=$('tabs');TYPES.forEach(([key,label])=>{const b=document.createElement('button');b.type='button';b.className='tab';b.dataset.type=key;b.setAttribute('role','tab');b.setAttribute('aria-selected',key==='auto'?'true':'false');b.textContent=label;b.onclick=()=>{setTipo(key)};tabs.appendChild(b)});
+$('quoteForm').addEventListener('submit',e=>{e.preventDefault();$('formError').textContent='';try{
+ const errs=V.validate();
+ if(errs.length){resetOutput();$('formError').textContent='No se generó la solicitud: faltan o hay que corregir '+errs.length+' dato'+(errs.length>1?'s':'')+'. Están listados arriba y marcados en rojo.';return}
+ generated=buildMessage();$('preview').classList.remove('stale');$('preview').textContent=generated;$('copy').disabled=false;$('openWa').disabled=false;$('openMail').disabled=false;status('✓ Pedido generado. Revisá la información antes de compartir.');
+ V.success('✓ Solicitud preparada. Todavía no se envió: elegí email, WhatsApp o copiar.',{target:$('preview'),label:'Ver solicitud'});
+ const r=$('preview').getBoundingClientRect();if(r.top<0||r.top>window.innerHeight*0.6)$('preview').scrollIntoView({block:'start',behavior:'instant'});
+}catch(err){console.error('[MV SEG V4.1] Error al generar la solicitud:',err&&err.message);$('formError').textContent='Ocurrió un problema técnico al generar la solicitud. No se perdió nada de lo cargado: probá de nuevo o recargá la página.'}});
+$('quoteForm').addEventListener('reset',()=>setTimeout(()=>{setTipo(tipo);$('asesor').value='';V.clear();$('formError').textContent=''},0));
+$('copy').onclick=async()=>{if(!generated)return;status((await copy(generated))?'✓ Pedido copiado.':'No se pudo copiar. Seleccioná el texto de la vista previa.')};
+$('requirements').onclick=async()=>{const txt=requirements(tipo);generated='';$('copy').disabled=true;$('openWa').disabled=true;$('openMail').disabled=true;$('preview').textContent=txt;status((await copy(txt))?'✓ Requisitos copiados. Listos para enviar al cliente.':'Requisitos mostrados; seleccionalos para copiar.')};
+$('openMail').onclick=async()=>{
+ if(!generated)return;
+ const subject=encodeURIComponent(emailSubject());
+ const body=emailBody();
+ const url=`mailto:${EMAIL}?subject=${subject}&body=${encodeURIComponent(body)}`;
+ // Los programas de correo pueden truncar un mailto demasiado largo, especialmente con flotas.
+ if(url.length>2200){
+  const copied=await copy(body);
+  if(!copied){status('No se pudo copiar el cuerpo del email. Copiá el pedido con el botón de arriba y pegalo en tu correo.');return}
+  status('✓ Solicitud extensa: se copió el texto completo. Se abre un correo dirigido a MV SEG; pegá el texto en el cuerpo antes de enviarlo.');
+  window.location.href=`mailto:${EMAIL}?subject=${subject}`;
+  return;
+ }
+ status('✓ Correo preparado. Revisá destinatario y contenido en tu aplicación de correo y presioná Enviar.');
+ window.location.href=url;
+};
+$('openWa').onclick=()=>{if(generated)window.open(`https://wa.me/${DESTINO}?text=${encodeURIComponent(generated)}`,'_blank','noopener,noreferrer')};
+setTipo('auto');
+})();
+</script>
+<script>
+(()=>{'use strict';
+const $=id=>document.getElementById(id);
+const EMAIL='mvseguroseinversiones@gmail.com', WA='541123878384';
+const TYPES={
+ choque:{label:'Choque / accidente de tránsito',fields:[['sinPatente','Dominio del vehículo asegurado'],['sinConductor','Conductor al momento del hecho'],['sinTerceros','Datos del tercero (patente, nombre, contacto, compañía si se conoce)'],['sinLesionados','¿Hubo lesionados?']],docs:[['Fotos de daños y panorama general','Tomar fotos antes de mover vehículos si es seguro y permitido'],['Cédula del vehículo y licencia del conductor','Según requisitos aplicables'],['Datos del tercero y su aseguradora','Si intervino un tercero'],['Constancia de denuncia o intervención policial','Cuando corresponda'],['Datos de testigos','Si existen']]},
+ roboAuto:{label:'Robo / hurto de vehículo',fields:[['sinPatente','Dominio / patente'],['sinClaseRobo','Tipo: robo, hurto o tentativa'],['sinNroPolicial','N.º de denuncia policial (si existe)']],docs:[['Denuncia policial','Si ya fue radicada'],['Cédula / documentación del vehículo','Según etapa de gestión'],['Denuncia y constancia de recepción de compañía','Cuando se formalice'],['Datos del equipo GNC u otros accesorios','Si corresponde'],['Llaves / documentación adicional','Según requerimiento de compañía']]},
+ granizo:{label:'Granizo / daño del vehículo',fields:[['sinPatente','Dominio / patente'],['sinGuarda','Lugar donde se encontraba el vehículo'],['sinDanos','Partes afectadas']],docs:[['Fotos del vehículo completo con dominio visible','Si es seguro obtenerlas'],['Fotos de daños / detalles','Antes de reparar, si es posible'],['Presupuesto de reparación','Si ya se dispone'],['Inspección / constancia de compañía','Si fue solicitada']]},
+ inmueble:{label:'Hogar / comercio',fields:[['sinDireccionRiesgo','Dirección del inmueble o comercio'],['sinCausa','Tipo de daño (agua, incendio, robo, RC, etc.)'],['sinAfectacion','Bienes y sectores afectados']],docs:[['Fotos de los daños y lugar del hecho','Si es seguro obtenerlas'],['Detalle de bienes / inventario afectados','Cantidades y descripción'],['Factura o comprobantes de propiedad','Si se solicitan'],['Presupuesto / informe técnico','Cuando aplique'],['Denuncia policial / bomberos','Si corresponde al hecho']]},
+ apSiniestro:{label:'Accidentes personales',fields:[['sinActividad','Actividad al momento del accidente'],['sinLesiones','Lesiones informadas, sin incluir diagnósticos íntimos'],['sinAtencion','Centro / fecha de asistencia médica']],docs:[['Constancia de atención médica','Por canal autorizado'],['Certificado médico o informe de lesión','Según cobertura y requerimientos'],['Relato de actividad, fecha y circunstancias','Sin especulación'],['Denuncia ante organismo o empleador','Si corresponde al contexto laboral']]},
+ praxisSiniestro:{label:'RC profesional / mala praxis',fields:[['sinProfesional','Profesión y especialidad'],['sinFechaReclamo','Fecha de recepción del reclamo'],['sinPeriodo','Póliza y fecha retroactiva, si se conocen']],docs:[['Reclamo, intimación o notificación recibida','Con fecha de recepción'],['Póliza, condiciones y retroactividad','Para verificar modalidad claims made'],['Antecedentes y documentación profesional pertinente','Solo por canales seguros'],['Información de abogado / mediación','Si ya existe']],warning:'⚠️ No incluyas historias clínicas, datos identificatorios de pacientes ni detalles médicos sensibles en el mensaje de WhatsApp. Coordiná entrega por canal seguro.'},
+ celSiniestro:{label:'Celular / equipo electrónico',fields:[['sinModelo','Marca y modelo del equipo'],['sinIMEI','IMEI / número de serie'],['sinLinea','Línea asociada (si aplica)']],docs:[['Denuncia policial','Si se trata de robo y corresponde'],['Factura o comprobante de compra','Si lo exige el producto'],['Bloqueo IMEI / línea','Si fue robado y corresponde'],['Fotos del daño / presupuesto','Si es daño físico'],['Constancia de recepción del siniestro','Si ya existe']]},
+ otro:{label:'Otro siniestro',fields:[['sinRiesgo','Ramo o riesgo afectado'],['sinDatoExtra','Detalle adicional relevante']],docs:[['Documentación del riesgo asegurado','Si está disponible'],['Prueba o registro del hecho','Fotos, actas u otros, según el caso'],['Denuncia ante autoridad','Solo si corresponde']]}
+};
+let claimMsg='';
+const VS=MVV.attach({form:$('claimForm'),summary:$('sinSummary'),noun:'preparar la gestión',cta:'Generar gestión',rules:(push,h)=>claimRules(push,h),onEdit:()=>staleClaim()});
+function claimRules(push,h){const d=h.val($('sinFecha'));if(d){const t=new Date(),iso=t.getFullYear()+'-'+String(t.getMonth()+1).padStart(2,'0')+'-'+String(t.getDate()).padStart(2,'0');if(d>iso)push($('sinFecha'),'La fecha del hecho no puede ser posterior a hoy.')}if(h.val($('sinAccion'))==='Otra gestión (detallar)'&&!h.val($('sinObservaciones')))push($('sinObservaciones'),'Detallá en las observaciones qué gestión necesitás (elegiste «Otra gestión»).')}
+function staleClaim(){if(!claimMsg)return;claimMsg='';$('sinPreview').classList.add('stale');$('sinPreview').textContent='⚠️ Cambiaste datos del formulario después de generar la gestión, así que el texto anterior quedó desactualizado y se desactivaron los botones de envío. Volvé a presionar «Generar gestión» para actualizarlo.';['sinMailBtn','sinCopyBtn','sinWaBtn'].forEach(x=>$(x).disabled=true);$('sinStatus').textContent=''}
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const v=id=>$(id)?.value?.trim()||'';
+const stamp=d=>d&&/^\d{4}-\d{2}-\d{2}$/.test(d)?`${d.slice(8,10)}/${d.slice(5,7)}/${d.slice(0,4)}`:d;
+const restorePreview=()=>{claimMsg='';$('sinPreview').classList.remove('stale');$('sinPreview').textContent='Generá una gestión para preparar su envío.';['sinMailBtn','sinCopyBtn','sinWaBtn'].forEach(x=>$(x).disabled=true);$('sinStatus').textContent=''};
+const pending=id=>v(id)||'[PENDIENTE DE INFORMAR]';
+const f=(id,label)=>`<div class="field"><label for="${id}">${label}</label><input id="${id}" placeholder="Indicar o dejar pendiente"></div>`;
+function updateType(){const type=TYPES[v('sinTipo')];
+ $('sinEspecial').innerHTML=type?`<div class="sectiontitle">🔍 Datos específicos: ${esc(type.label)}</div><div class="claim-split">${type.fields.map(([id,label])=>f(id,esc(label))).join('')}</div>${type.warning?`<div class="claim-alert">${esc(type.warning)}</div>`:''}`:'';
+ $('sinDocs').innerHTML=type?type.docs.map(([title,note],i)=>`<div class="claim-doc"><div class="doc-name">${esc(title)}<small>${esc(note)}</small></div><select class="doc-status" aria-label="Estado: ${esc(title)}" data-title="${esc(title)}"><option value="Pendiente">📌 Pendiente</option><option value="Disponible para adjuntar">✅ Disponible para adjuntar</option><option value="No aplica">➖ No aplica</option></select></div>`).join(''):'<p class="muted">Seleccioná el tipo de siniestro para ver la lista de documentación.</p>';
+ restorePreview();VS.refresh();
+}
+function lines(){const type=TYPES[v('sinTipo')];let ls=[`🛡️ *SOLICITUD DE GESTIÓN DE SINIESTRO*`,`*Gestión:* ${v('sinEtapa')}`,`*Tipo:* ${type.label}`,'',`*Asegurado:* ${v('sinAsegurado')}`,`*Documento:* ${pending('sinDocumento')}`,`*Teléfono:* ${v('sinTelefono')}`,`*Asesor responsable:* ${v('sinAsesor')}`,`*Compañía:* ${pending('sinCompania')}`,`*Póliza / referencia:* ${pending('sinPoliza')}`];
+ if(v('sinExpediente'))ls.push(`*Siniestro / expediente existente:* ${v('sinExpediente')}`);
+ if(v('sinMail'))ls.push(`*Email:* ${v('sinMail')}`);
+ ls.push('',`📍 *HECHO*`,`*Fecha:* ${stamp(v('sinFecha'))}`,`*Hora:* ${v('sinHora')||'No informada'}`,`*Lugar:* ${v('sinLugar')}`,`*Relato:* ${v('sinRelato')}`);
+ for(const [id,label] of type.fields)ls.push(`*${label}:* ${pending(id)}`);
+ const docs=Array.from(document.querySelectorAll('.doc-status')).map(x=>({title:x.dataset.title,state:x.value}));
+ ls.push('','📎 *DOCUMENTACIÓN*');for(const d of docs)ls.push(`${d.state==='Disponible para adjuntar'?'✅':d.state==='No aplica'?'➖':'⏳'} ${d.title}: ${d.state}`);
+ const pend=docs.filter(d=>d.state==='Pendiente');ls.push('',pend.length?`⏳ *Pendiente de aportar (${pend.length}):* ${pend.map(d=>d.title).join('; ')}`:'✅ Sin documentación pendiente declarada.');if(pend.length)ls.push('_El aviso se realiza igualmente, sin esperar esa documentación; se enviará a medida que esté disponible._');
+ ls.push('',`*Próximo paso solicitado:* ${v('sinAccion')}`,`*Prioridad:* ${v('sinUrgencia')}`);
+ if(v('sinObservaciones'))ls.push(`*Observaciones:* ${v('sinObservaciones')}`);
+ if(type.warning)ls.push('',type.warning);
+ ls.push('','📌 *Importante:* mensaje de gestión. No equivale a denuncia formal ante la compañía ni confirma cobertura. Adjuntar archivos manualmente y conservar constancia de recepción.','✅ Se declaró contar con autorización para compartir los datos con MV SEG.');
+ return ls.join('\n');}
+async function copy(t){try{await navigator.clipboard.writeText(t);return true}catch(e){const el=document.createElement('textarea');el.value=t;el.style.position='fixed';el.style.left='-9999px';document.body.appendChild(el);el.select();const ok=document.execCommand('copy');el.remove();return ok}}
+const status=t=>$('sinStatus').textContent=t;
+function switchWorkspace(where){const claims=where==='sin';$('claimWorkspace').hidden=!claims;$('quoteWorkspace').hidden=claims;$('workspaceSin').setAttribute('aria-selected',String(claims));$('workspaceCot').setAttribute('aria-selected',String(!claims));window.scrollTo?.({top:0,behavior:'instant'})}
+$('workspaceCot').addEventListener('click',()=>switchWorkspace('cot'));
+$('workspaceSin').addEventListener('click',()=>switchWorkspace('sin'));
+$('sinTipo').addEventListener('change',updateType);
+$('claimForm').addEventListener('submit',e=>{e.preventDefault();$('sinError').textContent='';try{
+ const errs=VS.validate();
+ if(errs.length){restorePreview();$('sinError').textContent='No se generó la gestión: faltan o hay que corregir '+errs.length+' dato'+(errs.length>1?'s':'')+'. Están listados arriba y marcados en rojo. La documentación pendiente no impide generar el aviso.';return}
+ claimMsg=lines();$('sinPreview').classList.remove('stale');$('sinPreview').textContent=claimMsg;['sinMailBtn','sinCopyBtn','sinWaBtn'].forEach(x=>$(x).disabled=false);status('✓ Gestión preparada (aún no enviada ni denunciada formalmente). Verificá los datos y adjuntá la documentación disponible en el canal de envío.');
+ VS.success('✓ Gestión preparada. Todavía no se envió: elegí email, WhatsApp o copiar.',{target:$('sinPreview'),label:'Ver gestión'});
+ const r=$('sinPreview').getBoundingClientRect();if(r.top<0||r.top>window.innerHeight*0.6)$('sinPreview').scrollIntoView({block:'start',behavior:'instant'});
+}catch(err){console.error('[MV SEG V4.1] Error al generar la gestión:',err&&err.message);$('sinError').textContent='Ocurrió un problema técnico al generar la gestión. No se perdió nada de lo cargado: probá de nuevo o recargá la página.'}});
+$('claimForm').addEventListener('reset',()=>setTimeout(()=>{updateType();VS.clear();$('sinError').textContent=''},0));
+$('sinCopyBtn').addEventListener('click',async()=>{if(claimMsg)status((await copy(claimMsg))?'✓ Gestión copiada.':'Copiá el mensaje de la vista previa manualmente.')});
+$('sinReqBtn').addEventListener('click',async()=>{const type=TYPES[v('sinTipo')];if(!type){status('Seleccioná un tipo de siniestro para copiar sus requisitos.');return}const msg=`¡Hola! 😊 Para avanzar con el siniestro de *${type.label}*, por favor enviame los datos *por escrito*:\n\n👤 Nombre completo, DNI/CUIT y contacto\n🏢 Compañía y póliza (si se conocen)\n📅 Fecha, hora y lugar del hecho\n📝 Relato objetivo de lo sucedido\n\n📎 *Documentación para revisar según corresponda:*\n${type.docs.map(x=>'• '+x[0]).join('\n')}\n\n⚠️ No esperes a tener todos los documentos para avisarnos. Podemos iniciar la gestión y dejar lo pendiente identificado. Las fotos sirven para respaldar la información; el texto facilita el seguimiento.\n\n¡Gracias!`;status((await copy(msg))?'✓ Requisitos copiados para enviar al interesado.':'No se pudo copiar automáticamente.');$('sinPreview').textContent=msg;claimMsg='';['sinMailBtn','sinCopyBtn','sinWaBtn'].forEach(x=>$(x).disabled=true)});
+$('sinWaBtn').addEventListener('click',()=>{if(claimMsg)window.open(`https://wa.me/${WA}?text=${encodeURIComponent(claimMsg)}`,'_blank','noopener,noreferrer')});
+$('sinMailBtn').addEventListener('click',async()=>{if(!claimMsg)return;const subj=encodeURIComponent(`Gestión de siniestro · ${TYPES[v('sinTipo')].label} · ${v('sinAsegurado')}`);const body=`Hola, equipo de MV SEG:\n\nLes envío la siguiente gestión de siniestro:\n\n${claimMsg}\n\nGracias.`;const u=`mailto:${EMAIL}?subject=${subj}&body=${encodeURIComponent(body)}`;if(u.length>2200){const copied=await copy(body);if(!copied){status('No se pudo copiar el mensaje. Copialo desde la vista previa y adjuntá los documentos.');return}status('✓ Texto completo copiado. Se abre el correo sin cuerpo; pegalo y adjuntá la documentación.');window.location.href=`mailto:${EMAIL}?subject=${subj}`;return}status('✓ Correo preparado. Revisalo, adjuntá los documentos y presioná Enviar.');window.location.href=u});
+updateType();switchWorkspace('cot');
+})();
+</script>
+</body></html>
