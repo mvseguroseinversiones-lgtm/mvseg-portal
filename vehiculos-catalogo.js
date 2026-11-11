@@ -37,7 +37,7 @@
   }
   function numeroDe(a) { return parseInt(String(a.id).replace('0km-', ''), 10); }
 
-  /* opts: { tipo: 'auto'|'moto' (o una función que lo devuelve), marca: id, anio: id, modelo: id (solo auto),
+  /* opts: { tipo: 'auto'|'moto' (o una función que lo devuelve), marca: id, anio: id, modelo: id,
    *         anioNumerico: true → los años salen como número simple (el 0km se funde con su año) }
    * Devuelve { refrescar() } para llamar cuando cambia el tipo. */
   window.VehiculoCatalogo = {
@@ -51,7 +51,7 @@
 
       function actualizarModelos() {
         if (!dModelo) return;
-        if (tipoActual() !== 'auto' || !marcaActual) { llenar(dModelo, []); return; }
+        if (!marcaActual) { llenar(dModelo, []); return; }
         var anio = anioDe(anioEl.value), nombres = {};
         marcaActual.anios.forEach(function (a) {
           if (anio && String(numeroDe(a)) !== anio) return;
