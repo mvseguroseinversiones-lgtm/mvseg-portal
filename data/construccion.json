@@ -1,0 +1,86 @@
+{
+ "fuente": "https://www.apymeco.com.ar/indice.php",
+ "actualizado": "2026-11-20",
+ "mes": "OCT/26",
+ "valorM2": 2534060.94,
+ "serie": [
+  {
+   "mes": "OCT/26",
+   "valorM2": 2534060.94,
+   "indice": 16740.4,
+   "variacion": 3.93
+  },
+  {
+   "mes": "SET/26",
+   "valorM2": 2438217.5,
+   "indice": 16107.24,
+   "variacion": 2.38
+  },
+  {
+   "mes": "AGO/26",
+   "valorM2": 2383862.97,
+   "indice": 15748.17,
+   "variacion": 4.27
+  },
+  {
+   "mes": "JUL/26",
+   "valorM2": 2286170.63,
+   "indice": 15102.8,
+   "variacion": 1.38
+  },
+  {
+   "mes": "JUN/26",
+   "valorM2": 2254981.82,
+   "indice": 14896.76,
+   "variacion": 4.27
+  },
+  {
+   "mes": "MAY/26",
+   "valorM2": 2162556.49,
+   "indice": 14286.18,
+   "variacion": 1.84
+  },
+  {
+   "mes": "ABR/26",
+   "valorM2": 2123535.13,
+   "indice": 14028.4,
+   "variacion": 2.85
+  },
+  {
+   "mes": "MAR/26",
+   "valorM2": 2064767.26,
+   "indice": 13640.17,
+   "variacion": 1.81
+  },
+  {
+   "mes": "FEB/26",
+   "valorM2": 2028032.29,
+   "indice": 13397.49,
+   "variacion": 0.4
+  },
+  {
+   "mes": "ENE/26",
+   "valorM2": 2019993.42,
+   "indice": 13344.39,
+   "variacion": 1.27
+  },
+  {
+   "mes": "DIC/25",
+   "valorM2": 1994703.26,
+   "indice": 13177.32,
+   "variacion": 0.56
+  },
+  {
+   "mes": "NOV/25",
+   "valorM2": 1983640.76,
+   "indice": 13104.24,
+   "variacion": 3.2
+  },
+  {
+   "mes": "OCT/25",
+   "valorM2": 1922221.99,
+   "indice": 12698.5,
+   "variacion": 2.99
+  }
+ ]
+}

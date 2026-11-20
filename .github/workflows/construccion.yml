@@ -1,0 +1,22 @@
+name: Actualizar valor de construcción (Apymeco)
+on:
+  schedule:
+    - cron: "0 12 * * *"   # todos los días; sólo commitea si Apymeco publicó un mes nuevo
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/actualizar_construccion.py
+      - name: Commit si hubo cambios
+        run: |
+          if [ -n "$(git status --porcelain data/construccion.json)" ]; then
+            git config user.name "github-actions"
+            git config user.email "actions@users.noreply.github.com"
+            git add data/construccion.json
+            git commit -m "Valor de construcción Apymeco actualizado"
+            git push
+          fi
